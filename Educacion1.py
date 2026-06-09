@@ -17,7 +17,7 @@ st.sidebar.header("Presupuesto")
 # Límite superior: 35000000000
 # Valor inicial: 40000000000
 presupuesto = st.sidebar.slider("Presupuesto", 6000, 2500, 1000)
-datos = pd.read_csv('datos.csv' , encoding= 'latin-1')
+datos = pd.read_csv('datos (1).csv' , encoding= 'latin-1')
 # Seleccionamos las variables
 X = pd.DataFrame(datos, columns=['Inversion'])
 y = datos['Termino']
