@@ -22,8 +22,7 @@ datos = pd.read_csv('datos (1).csv' , encoding= 'latin-1')
 st.sidebar.header("Porcentaje de Becas")
 porcentaje_becas = st.sidebar.slider("Porcentaje de Becas", 0.0, 1.0, 0.2)
 st.sidebar.header("Porcentaje de Infraestructura")
-porcentaje_infra = st.sidebar.slider("Porcentaje de Infraestructura", 0.0, 1.0,
-0.5)
+porcentaje_infra = st.sidebar.slider("Porcentaje de Infraestructura", 0.0, 1.0, 0.5)
 st.sidebar.header("Porcentaje de Docentes")
 porcentaje_docentes = st.sidebar.slider("Porcentaje de Docentes", 0.0, 1.0, 0.15)
 # Seleccionamos las variables
