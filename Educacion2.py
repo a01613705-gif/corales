@@ -50,15 +50,15 @@ import warnings
 if total_gastado != presupuesto:
     st.error("El total gastado debe ser exactamente igual al presupuesto.")
 elif presupuesto_becas < presupuesto*.40:
-    st.warning("El presupuesto de becas no cumple con el mínimo del 20%.",UserWarning)
+    st.warning("El presupuesto de becas no cumple con el mínimo del 20%.", UserWarning)
 elif presupuesto_infra > presupuesto*.45:
-    st.warning("El presupuesto de infraestructura excede el tope del 50%.",UserWarning)
+    st.warning("El presupuesto de infraestructura excede el tope del 50%.", UserWarning)
 elif presupuesto_docentes < presupuesto*.35:
-    st.warning("La capacitación docente está por debajo del 15% obligatorio.",UserWarning)
+    st.warning("La capacitación docente está por debajo del 15% obligatorio.", UserWarning)
 else:
     st.success("Combinación de presupuesto válida.")
 st.subheader('Impacto alcanzado')
-impacto = b0 + prep_alumno*b1[0] + presupuesto_infra/100000000*0.15 + presupuesto_docentes/100000000*.14
+impacto = b0 + prep_alumno*b1[0] + presupuesto_infra/1000000000*0.15 + presupuesto_docentes/1000000000*.14
 st.metric("Impacto Proyectado ODS 4", f" +{float(impacto):.3f}%")
 # Presentamos el tipo de filosofía
 if porcentaje_becas >= 0.40:
